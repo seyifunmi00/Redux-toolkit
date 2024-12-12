@@ -55,3 +55,22 @@ export default todoSlice.reducer;
 //export all the reducers as actions
 //export the slice.reducer
 //go back to your store
+
+//   decreaseItemQuantity(state, action) {
+//   const itemIndex = state.cart.findIndex(item => item.pizzaId === action.payload);
+
+//   if (itemIndex !== -1) {
+//       const item = state.cart[itemIndex];
+//       if (item.quantity === 1) {
+//           // Remove item from cart when quantity is 1
+//           state.cart = state.cart.filter(item => item.pizzaId !== action.payload);
+//       } else {
+//           // Otherwise, decrease the quantity
+//           state.cart[itemIndex] = {
+//               ...item,
+//               quantity: item.quantity - 1,
+//               totalPrice: item.unitPrice * (item.quantity - 1),
+//           };
+//       }
+//   }
+// },
